@@ -1,0 +1,81 @@
+/* Search Job Component Styles */
+.search-job-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px;
+  background-color: #f3f2ef;
+}
+
+.search-filters {
+  width: 30%;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-results {
+  width: 70%;
+  background: white;
+  padding: 15px;
+  margin-left: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.search-button {
+  background-color: #0a66c2;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #004182;
+}
+
+.job-list {
+  list-style: none;
+  padding: 0;
+}
+
+.job-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.job-item:last-child {
+  border-bottom: none;
+}
+
+.job-title {
+  font-weight: bold;
+  color: #0a66c2;
+}
+
+.company-name {
+  color: #666;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .search-job-container {
+    flex-direction: column;
+  }
+  .search-filters,
+  .search-results {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}

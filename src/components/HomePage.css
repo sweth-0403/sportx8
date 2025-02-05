@@ -1,0 +1,47 @@
+/* HomePage.css */
+* {
+  padding-top: 1%;
+}
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgb(159, 165, 170);
+}
+
+.left-sidebar {
+  flex: 1;
+  max-width: 280px;
+}
+
+.middle-section {
+  flex: 2;
+  max-width: 600px;
+  margin: 0 20px;
+}
+
+.right-sidebar {
+  flex: 1;
+  max-width: 280px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-sidebar,
+  .middle-section,
+  .right-sidebar {
+    max-width: 100%;
+  }
+
+  .middle-section {
+    margin: 20px 0;
+  }
+}
